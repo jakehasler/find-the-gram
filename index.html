@@ -6,9 +6,8 @@
   <title>Find the Gram</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="events-ajax-practice/styles.css"> -->
     <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
       #map { height: 500px; }
@@ -28,15 +27,13 @@
     <script type="text/javascript">
         
         var map;
-        var lat;
-        var lng;
-        
-         
-        
+        // var lat;
+        // var lng;
+
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 40.233844, lng: -111.658534},
-            //scrollwheel: false,
+            scrollwheel: false,
             zoom: 12
           });
           
@@ -48,12 +45,18 @@
             //alert("Lat=" + lat + "; Lng=" + lng);
             
             var longitude = document.getElementById("lng");
-            longitude.innerHTML = "Longitude: " + lng;
+            longitude.innerHTML = "" + lng;
             var latitude = document.getElementById("lat");
-            latitude.innerHTML = "Latitude: " + lat;
+            latitude.innerHTML = "" + lat;
+            // var latid = document.getElementById("lat").innerHTML; // get the coordinates
+            // var longid = document.getElementById("lng").innerHTML;
+            // console.log(latid);
+            // console.log(longid);
         });
         }
-        
+
+
+
       //   var jsonData;
       //   var myurl = "http://www.google.com";
       //   $.ajax({
@@ -89,7 +92,8 @@
        
     </script>
     
-    <div class="Coordinates">
+    <div class="coordinates">
+      <h3>* Right click on an area of the map to view images from that location</h3>
         <h4 style="display:inline;" id ="lat">Latitude:</h4>
         <br>
         <h4  style="display:inline;" id ="lng">Longitude:</h4>

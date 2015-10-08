@@ -8,6 +8,7 @@ body {
 h1
 {
 	font-family: "Roboto Slab", sans-serif;
+	color: #dd845a;
 }
 
  
@@ -52,6 +53,17 @@ h6 {
 	padding-bottom: 40px;
 }
 
+
+.coordinates
+{
+	padding-top: 25px;
+	text-align: center;
+}
+
+.coordinates h3
+{
+	color: #959595;
+}
 	
 .feature {
 	background: url('../images/bigConcert.jpg');
@@ -127,12 +139,21 @@ h6 {
 
 .featured-product > img,
 .featured-product > a > img {
-	height: 150px;
+	height: auto;
+	width: 98%;
 }
 
 .featured-product h3 {
+	color: #8A4524;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+	.featured-product h4 {
 	color: #dd845a;
-	font-size: 18px;
+	font-size: 12px;
+	text-align: center;
 	}
 
 .featured-product .time {
