@@ -2,7 +2,7 @@
 var main = function(){
 
   if ((window.location.href.indexOf("access_token=") > -1) === false)  {
-    window.location.replace("https://instagram.com/oauth/authorize/?client_id=8952f9654af54fa8a472d2221a9b40fc&redirect_uri=https://students.cs.byu.edu/~hasler93/find-the-gram&response_type=token");
+    //window.location.replace("https://instagram.com/oauth/authorize/?client_id=8952f9654af54fa8a472d2221a9b40fc&redirect_uri=https://students.cs.byu.edu/~hasler93/find-the-gram&response_type=token");
 
   }
 
